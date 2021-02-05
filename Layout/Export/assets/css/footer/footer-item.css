@@ -1,0 +1,114 @@
+
+
+/* Rounded Card Row */
+.bg-white {
+    background-color: #fff;
+  }
+  
+  .rounded-border {
+    border-radius: 15px;
+  }
+  
+  .footer-rounded-border {
+    box-shadow: 0px -3px 10px var(--box-shadow-light-gray);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  /* Row */
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .row-footer-menu {
+    height: 60px;
+  }
+  
+  /* Col */
+.col-2 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .offset-1 {
+    margin-left: 8.333333%;
+  }
+  
+  .d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+  }
+  
+  @media (min-width:576px) {
+    .d-sm-flex {
+      display: -ms-flexbox!important;
+      display: flex!important;
+    }
+  }
+  
+  .justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+  }
+  
+  .align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+  }
+  
+  .align-self-center {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+  }
+  
+  @media (min-width:576px) {
+    .justify-content-sm-center {
+      -ms-flex-pack: center!important;
+      justify-content: center!important;
+    }
+  }
+  
+  @media (min-width:576px) {
+    .align-items-sm-center {
+      -ms-flex-align: center!important;
+      align-items: center!important;
+    }
+  }
+  
+  .text-center {
+    text-align: center!important;
+  }
+  
+  /* Icon */
+  .footer-menu-icon {
+    color: var(--gray);
+    font-size: 18px;
+  }
+  
+  /* Image Logo Lambretinha */
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  .footer-menu-icon-logo {
+    width: 22px;
+    height: 18px;
+  }
+  
+    
+  
+  
+  

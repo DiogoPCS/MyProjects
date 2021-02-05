@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cadastro_Produto_Lambretinha4</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+
+    <!-- Header Area -->
+    <link rel="stylesheet" href="assets/css/header/header.css">
+
+    <!-- Site Map Area -->
+    <link rel="stylesheet" href="assets/css//site-map/site-map.css">
+
+    <!-- Search Products Area -->
+    <link rel="stylesheet" href="assets/css/main-screen-title/main-screen-title.css">
+
+    <!-- Form Filter Area -->
+    <link rel="stylesheet" href="assets/css/main-content/form/row.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/column.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/form-group.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/input-search.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/select-exibir.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/select-mostrar.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/product-count-label.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/filter-button.css">
+    <link rel="stylesheet" href="assets/css/main-content/form/button-add-product.css">
+
+    <!-- Product List Area -->
+    <link rel="stylesheet" href="assets/css/main-content/product-list-area/row.css">
+    <link rel="stylesheet" href="assets/css/main-content/product-list-area/column.css">
+    <link rel="stylesheet" href="assets/css/main-content/product-list-area/product-list-header.css">
+    <!-- <link rel="stylesheet" href="assets/css/main-content/product-list-area/product-list.css">
+    <link rel="stylesheet" href="assets/css/main-content/product-list-area/product-list-item.css">
+    <link rel="stylesheet" href="assets/css/main-content/product-list-area/product-list-pagination.css"> -->
+
+    <!-- Footer Area -->
+    <link rel="stylesheet" href="assets/css/footer/row.css">
+    <link rel="stylesheet" href="assets/css/footer/column.css">
+    <link rel="stylesheet" href="assets/css/footer/footer-item.css">
+
+
+
+
+    
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row box-shadown row-padding" id="header">
+            <div class="col-12 d-inline-flex align-items-center margin-botton-10"><i class="icon ion-chevron-left" id="header-icon"></i>
+                <p class="flex-row m-auto" id="header-title">Cadastro de Produto</p>
+            </div>
+        </div>
+
+        <div class="row row-padding">
+            <div class="col-12 text-left">
+                <p class="site-map">Início&nbsp;&nbsp;<i class="icon ion-chevron-right site-map-icon"></i>&nbsp; Lambretinha&nbsp;&nbsp;<i class="icon ion-chevron-right site-map-icon"></i>&nbsp; Cadastro Delivery</p>
+            </div>
+        </div>
+
+
+        <div class="row row-padding" id="search-products-title-screen">
+            <div class="col-12" id="col-main-title">
+                <p class="main-title-screen">Pesquisa Produtos</p>
+            </div>
+        </div>
+
+
+        <div class="row row-padding">
+            <div class="col-12 rounded-border bg-white">
+                <div class="row row-padding">
+                    <div class="col-12 padding-20">
+                        <form id="form-filter">
+                            <div class="form-group">
+                                <div class="form-row">
+                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-md-flex order-md-1"><input class="form-control form-control-sm form-input input-search" type="search" placeholder="Digite o texto para localizar"></div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 d-md-flex justify-content-md-center align-items-md-center order-md-3 align-items-lg-center align-items-xl-center"><label class="d-lg-flex form-label">Exibir</label><select class="form-control form-input">
+                                            <option value="delivery" selected="">Delivery</option>
+                                        </select></div>
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 d-md-flex align-items-md-center order-md-6 justify-content-xl-end align-items-xl-center input-count-list"><label class="form-label">Mostrar</label><select class="form-control form-input">
+                                            <option value="10" selected="">10</option>
+                                        </select></div>
+                                    <div class="col-9 col-sm-9 col-md-2 col-lg-2 col-xl-2 d-sm-flex align-items-sm-start order-md-2 col-product-count">
+                                        <p class="text-acount">99 Produtos Encontrados</p>
+                                    </div>
+                                    <div class="col-3 col-sm-3 col-md-1 col-lg-1 col-xl-1 offset-md-0 offset-lg-0 offset-xl-0 d-md-flex justify-content-md-start align-items-md-center order-md-4">
+                                        <p id="filter-button">Filtrar</p>
+                                    </div>
+                                    <div class="col-6 col-sm-3 col-md-2 col-lg-2 col-xl-2 offset-6 offset-sm-9 offset-md-0 offset-lg-0 offset-xl-0 d-md-flex align-items-md-center order-md-5"><button class="btn btn-primary" id="button-add-product" type="button"><i class="icon ion-android-add" id="plus-button"></i>&nbsp;Produto</button></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row padding-card">
+                    <div class="col-12">
+                        <div class="bg-white">
+                            <div class="row padding-top-right-left-20 title-row">
+                                <div class="col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1 text-truncate d-md-flex order-1 order-md-1 padding-0">
+                                    <p class="d-md-flex title-card title-card-code">Código:&nbsp;</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-3 order-md-2">
+                                    <p class="text-truncate title-card">Cód Barras:&nbsp;</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-3">
+                                    <p class="text-truncate title-card">Descrição:</p>
+                                </div>
+                                <div class="col-2 col-md-2 col-lg-2 col-xl-2 order-6 order-md-4">
+                                    <p class="text-truncate title-card" id="title-card-type-4">Tipo:&nbsp;</p>
+                                </div>
+                                <div class="col-5 col-sm-5 col-md-2 col-lg-2 col-xl-2 order-7 order-md-5 col-title-actions">
+                                    <p class="text-truncate title-card">Ações:&nbsp;</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-6">
+                                    <p class="text-truncate title-card">Preço:</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-7 tittle-item-description">
+                                    <p class="text-truncate title-card">Estoque:</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" id="product-row-2">
+                        <div class="bg-light-gray">
+                            <div class="row padding-top-right-left-20">
+                                <div class="col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1 order-1 order-md-1 padding-0 title-item-col">
+                                    <p class="title-card title-card-code">Código:&nbsp;</p>
+                                </div>
+                                <div class="col-9 col-sm-10 col-md-1 col-lg-1 col-xl-1 order-2 order-md-8 tittle-item-description">
+                                    <p class="description-title-card">1896</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-3 order-md-2 title-item-col">
+                                    <p class="title-card">Cód Barras:&nbsp;</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-4 order-md-9">
+                                    <p class="description-title-card">00000000000001</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-3 title-item-col">
+                                    <p class="title-card">Descrição:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-10">
+                                    <p class="description-title-card">Produto Teste</p>
+                                </div>
+                                <div class="col-2 col-md-2 col-lg-2 col-xl-2 order-6 order-md-4 title-item-col">
+                                    <p id="title-card-type-2" class="title-card">Tipo:&nbsp;</p>
+                                </div>
+                                <div class="col-6 col-sm-7 col-md-2 col-lg-2 col-xl-2 d-sm-flex order-6 order-md-11">
+                                    <p class="description-title-card rounded-border bg-ocean-blue item-card">Item</p>
+                                </div>
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 order-7 order-md-12"><i class="icon ion-eye card-eyes-icon"></i><i class="icon ion-android-create card-edit-icon"></i><i class="icon ion-trash-b card-trash-icon"></i></div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-6 title-item-col">
+                                    <p class="title-card">Preço:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-12">
+                                    <p class="description-title-card">R$ 200,21</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-7 padding-0 title-item-col">
+                                    <p class="title-card">Estoque:</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-12 padding-0">
+                                    <p class="description-title-card">525,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" id="product-row-1">
+                        <div class="bg-white">
+                            <div class="row padding-top-right-left-20">
+                                <div class="col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1 order-1 order-md-1 padding-0 title-item-col">
+                                    <p class="title-card title-card-code">Código:&nbsp;</p>
+                                </div>
+                                <div class="col-9 col-sm-10 col-md-1 col-lg-1 col-xl-1 order-2 order-md-8 tittle-item-description">
+                                    <p class="description-title-card">1896</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-3 order-md-2 title-item-col">
+                                    <p class="title-card">Cód Barras:&nbsp;</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-4 order-md-9">
+                                    <p class="description-title-card">00000000000001</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-3 title-item-col">
+                                    <p class="title-card">Descrição:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-10">
+                                    <p class="description-title-card">Produto Teste</p>
+                                </div>
+                                <div class="col-2 col-md-2 col-lg-2 col-xl-2 order-6 order-md-4 title-item-col">
+                                    <p id="title-card-type-1" class="title-card">Tipo:&nbsp;</p>
+                                </div>
+                                <div class="col-6 col-sm-7 col-md-2 col-lg-2 col-xl-2 d-sm-flex order-6 order-md-11">
+                                    <p class="description-title-card rounded-border bg-purple item-card">Kit</p>
+                                </div>
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 order-7 order-md-12"><i class="icon ion-eye card-eyes-icon"></i><i class="icon ion-android-create card-edit-icon"></i><i class="icon ion-trash-b card-trash-icon"></i></div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-6 title-item-col">
+                                    <p class="title-card">Preço:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-12">
+                                    <p class="description-title-card">R$ 200,21</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-7 padding-0 title-item-col">
+                                    <p class="title-card">Estoque:</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-12 padding-0">
+                                    <p class="description-title-card">525,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" id="product-row-5">
+                        <div class="bg-light-gray">
+                            <div class="row padding-top-right-left-20">
+                                <div class="col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1 order-1 order-md-1 padding-0 title-item-col">
+                                    <p class="title-card title-card-code">Código:&nbsp;</p>
+                                </div>
+                                <div class="col-9 col-sm-10 col-md-1 col-lg-1 col-xl-1 order-2 order-md-8 tittle-item-description">
+                                    <p class="description-title-card">1896</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-3 order-md-2 title-item-col">
+                                    <p class="title-card">Cód Barras:&nbsp;</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-4 order-md-9">
+                                    <p class="description-title-card">00000000000001</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-3 title-item-col">
+                                    <p class="title-card">Descrição:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-10">
+                                    <p class="description-title-card">Produto Teste</p>
+                                </div>
+                                <div class="col-2 col-md-2 col-lg-2 col-xl-2 order-6 order-md-4 title-item-col">
+                                    <p id="title-card-type-6" class="title-card">Tipo:&nbsp;</p>
+                                </div>
+                                <div class="col-6 col-sm-7 col-md-2 col-lg-2 col-xl-2 d-sm-flex order-6 order-md-11">
+                                    <p class="description-title-card rounded-border bg-ocean-blue item-card">Item</p>
+                                </div>
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 order-7 order-md-12"><i class="icon ion-eye card-eyes-icon"></i><i class="icon ion-android-create card-edit-icon"></i><i class="icon ion-trash-b card-trash-icon"></i></div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-6 title-item-col">
+                                    <p class="title-card">Preço:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-12">
+                                    <p class="description-title-card">R$ 200,21</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-7 padding-0 title-item-col">
+                                    <p class="title-card">Estoque:</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-12 padding-0">
+                                    <p class="description-title-card">525,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" id="product-row-6">
+                        <div class="bg-white">
+                            <div class="row padding-top-right-left-20">
+                                <div class="col-3 col-sm-2 col-md-1 col-lg-1 col-xl-1 order-1 order-md-1 padding-0 title-item-col">
+                                    <p class="title-card title-card-code">Código:&nbsp;</p>
+                                </div>
+                                <div class="col-9 col-sm-10 col-md-1 col-lg-1 col-xl-1 order-2 order-md-8 tittle-item-description">
+                                    <p class="description-title-card">1896</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-3 order-md-2 title-item-col">
+                                    <p class="title-card">Cód Barras:&nbsp;</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 col-xl-2 order-4 order-md-9">
+                                    <p class="description-title-card">00000000000001</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-3 title-item-col">
+                                    <p class="title-card">Descrição:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-3 col-xl-3 order-5 order-md-10">
+                                    <p class="description-title-card">Produto Teste</p>
+                                </div>
+                                <div class="col-2 col-md-2 col-lg-2 col-xl-2 order-6 order-md-4 title-item-col">
+                                    <p id="title-card-type-7" class="title-card">Tipo:&nbsp;</p>
+                                </div>
+                                <div class="col-6 col-sm-7 col-md-2 col-lg-2 col-xl-2 d-sm-flex order-6 order-md-11">
+                                    <p class="description-title-card rounded-border bg-purple item-card">Kit</p>
+                                </div>
+                                <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 order-7 order-md-12"><i class="icon ion-eye card-eyes-icon"></i><i class="icon ion-android-create card-edit-icon"></i><i class="icon ion-trash-b card-trash-icon"></i></div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-6 title-item-col">
+                                    <p class="title-card">Preço:</p>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-1 col-xl-1 order-8 order-md-12">
+                                    <p class="description-title-card">R$ 200,21</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-7 padding-0 title-item-col">
+                                    <p class="title-card">Estoque:</p>
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1 col-xl-1 order-9 order-md-12 padding-0">
+                                    <p class="description-title-card">525,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" id="product-row-3">
+                        <div class="bg-white">
+                            <div class="row d-xl-flex padding-top-right-left-20">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-right d-flex d-sm-flex justify-content-end order-md-11 justify-content-xl-end padding-row">
+                                    <nav class="d-flex">
+                                        <ul class="pagination">
+                                            <li class="page-item d-xl-flex"><a class="page-link pagination-item" href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item"><a class="page-link pagination-item pagination-item-selected" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link pagination-item" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link pagination-item" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link pagination-item" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link pagination-item" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link pagination-item pagination-item-selected" href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row fixed-bottom margin-footer">
+                    <div class="col">
+                        <div class="rounded-border bg-white footer-rounded-border">
+                            <div class="row row-footer-menu">
+                                <div class="col-2 offset-1 text-center d-flex d-sm-flex justify-content-center align-items-center align-self-center justify-content-sm-center align-items-sm-center"><i class="fas fa-home footer-menu-icon"></i></div>
+                                <div class="col-2 text-center d-flex d-sm-flex justify-content-center align-items-center align-self-center justify-content-sm-center align-items-sm-center"><i class="fas fa-box-open footer-menu-icon text-blue"></i></div>
+                                <div class="col-2 text-center d-flex d-sm-flex justify-content-center align-items-center align-self-center justify-content-sm-center align-items-sm-center"><img class="footer-menu-icon-logo" src="assets/img/Icone_Lambretinha_t.svg"></div>
+                                <div class="col-2 text-center d-flex d-sm-flex justify-content-center align-items-center align-self-center justify-content-sm-center align-items-sm-center"><i class="fas fa-receipt footer-menu-icon"></i></div>
+                                <div class="col-2 text-center d-flex d-sm-flex justify-content-center align-items-center align-self-center justify-content-sm-center align-items-sm-center"><i class="fas fa-store footer-menu-icon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
