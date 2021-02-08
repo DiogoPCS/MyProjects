@@ -1,0 +1,3 @@
+@mixin box-shadown ($horizontal: 3px, $vertical: 3px, $blur: 10px, $color: #b7b7b7) {
+  box-shadow: #{$horizontal} #{$vertical} #{$blur} #{$color};
+}

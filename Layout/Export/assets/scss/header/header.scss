@@ -1,0 +1,74 @@
+// Import Colors
+// Import Fonts
+// Import Row
+// Import Column
+//import box-shadown
+
+@import '../styles.scss';
+
+#header {
+    background: $color-9;
+    height: 40px;
+    @include border-radius(0px, 0px, 15px, 15px);
+    @include box-shadown();
+
+    @media (min-width: 800px) {
+        & {
+            display: none;
+        }
+    }
+
+    &.row{
+        @include row();
+    }
+
+    & .col-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    & .d-inline-flex {
+        display: -ms-inline-flexbox!important;
+        display: inline-flex!important;
+    }
+    
+    & .align-items-center {
+        -ms-flex-align: center!important;
+        align-items: center!important;
+    }
+    
+    & .margin-botton {
+        @include margin(0, 0, null, 0);
+    }
+
+    /* Header Icon */
+    & #header-icon {
+        color: $color-5;
+    }
+
+    /* Title */
+    & p {
+        @include margin(0, 0, 0, 0);
+    }
+    
+    & .flex-row {
+        -ms-flex-direction: row!important;
+        flex-direction: row!important;
+    }
+
+    & .m-auto {
+        margin: auto!important;
+    }
+
+    & #header-title {
+        color: $color-5;
+        text-transform: uppercase;
+        font-size: $header-text;
+        font-weight: $font-weight-6;
+        width: 190px;
+        text-align: center;
+    }
+}
+
+
