@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Header Area -->
     <link rel="stylesheet" href="assets/css/header/header.css">
+    
+    <link rel="stylesheet" href="assets/css/sitemap/sitemap.css">
+
+    <link rel="stylesheet" href="assets/css/main-title/main-title.css">
+
+    <link rel="stylesheet" href="assets/css/form-filter/form-filter.css">
 
     
 
@@ -23,39 +29,42 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <main class="container-fluid">
 
-        <div class="row" id="header">
-            <div class="col-12 d-inline-flex align-items-center margin-botton"><i class="icon ion-chevron-left" id="header-icon"></i>
-                <p class="flex-row m-auto" id="header-title">Cadastro de Produto</p>
+        <header class="header-row">
+            <div class="col-12">
+                <i class="icon ion-chevron-left"></i>
+                <p class="flex-row m-auto">Cadastro de Produto</p>
             </div>
-        </div>
+        </header>
 
-        <div class="row row-padding">
-            <div class="col-12 text-left">
-                <p class="site-map">Início&nbsp;&nbsp;<i class="icon ion-chevron-right site-map-icon"></i>&nbsp; Lambretinha&nbsp;&nbsp;<i class="icon ion-chevron-right site-map-icon"></i>&nbsp; Cadastro Delivery</p>
+        <section class="sitemap-row">
+            <div class="col-12">
+                <p>Início&nbsp;&nbsp;<i class="icon ion-chevron-right"></i>&nbsp; Lambretinha&nbsp;&nbsp;<i class="icon ion-chevron-right"></i>&nbsp; Cadastro Delivery</p>
             </div>
-        </div>
+        </section>
 
-
-        <div class="row row-padding" id="search-products-title-screen">
-            <div class="col-12" id="col-main-title">
-                <p class="main-title-screen">Pesquisa Produtos</p>
+        <section class="main-title-row">
+            <div class="col-12">
+                <p>Pesquisa Produtos</p>
             </div>
-        </div>
+        </section>
 
+        <section class="row padding">
+            <div class="card">
+                <!-- form row -->
+                <div class="row padding">
+                    <div class="col-12 padding">
 
-        <div class="row row-padding">
-            <div class="col-12 rounded-border bg-white">
-                <div class="row row-padding">
-                    <div class="col-12 padding-20">
-                        <form id="form-filter">
+                        <form class="form-filter">
                             <div class="form-group">
                                 <div class="form-row">
                                     <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-md-flex order-md-1"><input class="form-control form-control-sm form-input input-search" type="search" placeholder="Digite o texto para localizar"></div>
-                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 d-md-flex justify-content-md-center align-items-md-center order-md-3 align-items-lg-center align-items-xl-center"><label class="d-lg-flex form-label">Exibir</label><select class="form-control form-input">
+                                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 d-md-flex justify-content-md-center align-items-md-center order-md-3 align-items-lg-center align-items-xl-center"><label class="d-lg-flex form-label">Exibir</label>
+                                        <select class="form-control form-input">
                                             <option value="delivery" selected="">Delivery</option>
-                                        </select></div>
+                                        </select>
+                                    </div>
                                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 d-md-flex align-items-md-center order-md-6 justify-content-xl-end align-items-xl-center input-count-list"><label class="form-label">Mostrar</label><select class="form-control form-input">
                                             <option value="10" selected="">10</option>
                                         </select></div>
@@ -69,8 +78,17 @@
                                 </div>
                             </div>
                         </form>
+
                     </div>
                 </div>
+
+
+
+
+
+
+
+
                 <div class="row padding-card">
                     <div class="col-12">
                         <div class="bg-white">
@@ -305,10 +323,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         
-    </div>
+    </main>
     
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

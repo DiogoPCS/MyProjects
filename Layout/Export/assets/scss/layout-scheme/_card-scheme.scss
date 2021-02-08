@@ -1,0 +1,8 @@
+@import '../styles.scss';
+
+@mixin card {
+    .card {
+        @include border-radius();
+        background-color: $color-5;
+    }
+}

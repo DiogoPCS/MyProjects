@@ -1,0 +1,10 @@
+@mixin rounded-border ($top-left:15px, $top-right:15px, $bottom-right:15px, $bottom-left:15px, $bg-color: #{$color-5}) {
+    .rounded-border {
+        border-radius: $top-left, $top-right, $bottom-right, $bottom-left;
+    }
+
+    .background {
+        background-color: $bg-color;
+    }
+    
+}

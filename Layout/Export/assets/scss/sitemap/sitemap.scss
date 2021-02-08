@@ -1,0 +1,24 @@
+@import '../styles.scss';
+
+.sitemap-row {
+    @include row();
+    
+    & .col-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left!important;
+    }
+
+    /* Sitemap Text */
+    & p {
+        @include margin(15px, 0, 15px, 0);
+        color: #{$color-3};
+        font-size: #{$text-1};
+    }
+  
+    & i {
+        color: #{$color-2};
+        font-size: #{$text-3};
+    }
+}

@@ -42,4 +42,29 @@ main, .container, .container-fluid, .container-lg, .container-md, .container-sm,
   padding-left: 15px;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.sitemap-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  /* Sitemap Text */
+}
+.sitemap-row .col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: left !important;
+}
+.sitemap-row p {
+  margin: 15px, 0, 15px, 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+.sitemap-row i {
+  color: #55606e;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=sitemap.css.map */
