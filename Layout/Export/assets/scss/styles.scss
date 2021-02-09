@@ -1,4 +1,17 @@
-@charset "UTF-8";
+// @use 'layout-scheme/font-scheme.scss';
+// @use 'layout-scheme/color-scheme.scss';
+// @use 'layout-scheme/container-scheme';
+// @use 'layout-scheme/row-scheme';
+// @use 'layout-scheme/col-scheme';
+// @use 'layout-scheme/section-scheme';
+// @use 'layout-scheme/box-shadow-scheme';
+// @use 'layout-scheme/border-radius-scheme';
+// @use 'layout-scheme/margin-scheme';
+// @use 'layout-scheme/padding-scheme';
+// @use 'layout-scheme/media-scheme';
+// @use 'layout-scheme/html-scheme';
+// @use 'layout-scheme/body-scheme';
+// @use "sass:meta";
 
 *,
 *::before,
@@ -11,20 +24,3 @@
         scroll-behavior: smooth;
     }
 }
-
-
-
-@import 'layout-scheme/color-scheme.scss';
-@import 'layout-scheme/font-scheme.scss';
-@import 'layout-scheme/html-scheme';
-@import 'layout-scheme/body-scheme';
-@import 'layout-scheme/container-scheme';
-@import 'layout-scheme/row-scheme';
-@import 'layout-scheme/col-scheme';
-@import 'layout-scheme/section-scheme';
-@import 'layout-scheme/box-shadown-scheme';
-@import 'layout-scheme/border-radius-scheme';
-@import 'layout-scheme/margin-scheme';
-@import 'layout-scheme/padding-scheme';
-
-

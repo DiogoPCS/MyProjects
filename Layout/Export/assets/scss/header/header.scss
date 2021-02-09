@@ -1,19 +1,26 @@
-// Import Colors
-// Import Fonts
-// Import Row
-// Import Column
-//import box-shadown
-
-@import '../styles.scss';
+@use '../layout-scheme/font-scheme.scss';
+@use '../layout-scheme/color-scheme.scss';
+// @use '../layout-scheme/container-scheme';
+@use '../layout-scheme/row-scheme';
+// @use '../layout-scheme/col-scheme';
+// @use '../layout-scheme/section-scheme';
+@use '../layout-scheme/box-shadow-scheme';
+@use '../layout-scheme/border-radius-scheme';
+@use '../layout-scheme/margin-scheme';
+// @use '../layout-scheme/padding-scheme';
+@use '../layout-scheme/media-scheme';
+// @use '../layout-scheme/html-scheme';
+// @use '../layout-scheme/body-scheme';
+// @use "sass:meta";
 
 .header-row {
-    background: #{$color-9};
+    background: #{color-scheme.$color-9};
     height: 40px;
-    @include border-radius(0px, 0px, 15px, 15px);
-    @include box-shadown();
-    @include row();
+    @include border-radius-scheme.border-radius(0px, 0px, 15px, 15px);
+    @include box-shadow-scheme.box-shadown();
+    @include row-scheme.row();
 
-    @media (min-width: 800px) {
+    @media (min-width: media-scheme.$md) {
         & {
             display: none;
         }
@@ -27,21 +34,21 @@
         display: inline-flex!important;
         -ms-flex-align: center!important;
         align-items: center!important;
-        @include margin(0, 0, null, 0);
+        @include margin-scheme.margin(0, 0, null, 0);
     }
     
     /* Header Icon */
     & i {
-        color: #{$color-5};
+        color: #{color-scheme.$color-5};
     }
 
     /* Title */
     & p {
-        @include margin(0, 0, 0, 0);
-        color: #{$color-5};
+        @include margin-scheme.margin(0, 0, 0, 0);
+        color: #{color-scheme.$color-5};
         text-transform: uppercase;
-        font-size: #{$header-text};
-        font-weight: #{$font-weight-6};
+        font-size: #{font-scheme.$text-1};
+        font-weight: #{font-scheme.$font-weight-6};
         width: 190px;
         text-align: center;
     }

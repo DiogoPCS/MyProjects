@@ -1,7 +1,20 @@
-@import '../styles.scss';
+@use '../layout-scheme/font-scheme.scss';
+@use '../layout-scheme/color-scheme.scss';
+// @use '../layout-scheme/container-scheme';
+@use '../layout-scheme/row-scheme';
+@use '../layout-scheme/col-scheme';
+// @use '../layout-scheme/section-scheme';
+//@use '../layout-scheme/box-shadow-scheme';
+//@use '../layout-scheme/border-radius-scheme';
+@use '../layout-scheme/margin-scheme';
+// @use '../layout-scheme/padding-scheme';
+@use '../layout-scheme/media-scheme';
+// @use '../layout-scheme/html-scheme';
+// @use '../layout-scheme/body-scheme';
+// @use "sass:meta";
 
 .main-title-row {
-    @include row();
+    @include row-scheme.row();
     
     @media (min-width: 300px) {
         & {
@@ -28,9 +41,9 @@
       }
 
     & p {
-        color: #{$color-3};
-        font-size: #{$title-1};
-        @include margin(null, 0, null, 0);
+        color: #{color-scheme.$color-3};
+        font-size: #{font-scheme.$title-1};
+        @include margin-scheme.margin(null, 0, null, 0);
         text-transform: uppercase;
     }
 

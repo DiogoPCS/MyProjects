@@ -1,7 +1,20 @@
-@import '../styles.scss';
+@use '../layout-scheme/font-scheme.scss';
+@use '../layout-scheme/color-scheme.scss';
+// @use '../layout-scheme/container-scheme';
+@use '../layout-scheme/row-scheme';
+// @use '../layout-scheme/col-scheme';
+// @use '../layout-scheme/section-scheme';
+//@use '../layout-scheme/box-shadow-scheme';
+//@use '../layout-scheme/border-radius-scheme';
+@use '../layout-scheme/margin-scheme';
+// @use '../layout-scheme/padding-scheme';
+// @use '../layout-scheme/media-scheme';
+// @use '../layout-scheme/html-scheme';
+// @use '../layout-scheme/body-scheme';
+// @use "sass:meta";
 
 .sitemap-row {
-    @include row();
+    @include row-scheme.row();
     
     & .col-12 {
         -ms-flex: 0 0 100%;
@@ -12,13 +25,13 @@
 
     /* Sitemap Text */
     & p {
-        @include margin(15px, 0, 15px, 0);
-        color: #{$color-3};
-        font-size: #{$text-1};
+        @include margin-scheme.margin(15px, 0, 15px, 0);
+        color: #{color-scheme.$color-3};
+        font-size: #{font-scheme.$text-1};
     }
   
     & i {
-        color: #{$color-2};
-        font-size: #{$text-3};
+        color: #{color-scheme.$color-2};
+        font-size: #{font-scheme.$text-3};
     }
 }

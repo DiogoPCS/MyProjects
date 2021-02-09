@@ -1,11 +1,11 @@
-@use "sass:meta";
+
 body {
     margin: 0;
-    font-family: #{meta.inspect($monospace)};
-    font-size: #{$default-font-size};
-    font-weight: #{$font-weight-4};
-    line-height: #{$line-height};
-    color: #{$color-1};
+    font-family: #{meta.inspect(font-scheme.$monospace)};
+    font-size: #{font-scheme.$default-font-size};
+    font-weight: #{font-scheme.$font-weight-4};
+    line-height: #{font-scheme.$line-height};
+    color: #{color-scheme.$color-1};
     text-align: left;
-    background-color: #{$color-2};
+    background-color: #{color-scheme.$color-2};
 }

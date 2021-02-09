@@ -1,8 +1,6 @@
-@use "sass:meta";
-
 html {
-    font-family: #{meta.inspect($sans-serif)};
-    line-height: #{$line-height};
+    font-family: #{font-scheme.$sans-serif};
+    line-height: #{font-scheme.$line-height};
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
